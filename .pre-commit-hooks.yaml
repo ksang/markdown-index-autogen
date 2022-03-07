@@ -1,6 +1,6 @@
 - id: markdown-index-autogen
   name: Automatic generate / refresh markdown index
   description: Automatically generate / refresh markdown index with updated folder structure
-  entry: python gen.py
+  entry: markdown-index-autogen
   language: python
   types: [text]

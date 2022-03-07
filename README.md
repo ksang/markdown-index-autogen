@@ -7,7 +7,7 @@ I can't find one available so make one by myself.
 
 An example of running this tool: (python3)
 ```
-python gen.py -e .txt
+python autogen.py -e .txt
 ```
 
 ## Generated index
@@ -21,3 +21,14 @@ python gen.py -e .txt
 	- [example_c_2.txt](./example_folder_c/example_c_2.txt)
 
 Below content will remain unchanged.
+
+## As pre-commit hook
+.pre-commit-config.yaml:
+```
+repos:
+- repo: https://github.com/ksang/markdown-index-autogen
+  rev: v0.1.0
+  hooks:
+  - id: markdown-index-autogen
+    args: ["-e .txt"]
+```
