@@ -53,6 +53,7 @@ def main():
     parser.add_argument('-a', '--anchor', type=str, default="[comment]: # (markdown-index-autogen)", help='Comment anchor for indicate section to refresh.')
     parser.add_argument('-e', '--extension', type=str, default=".pdf", help='Extension of files to be indexed.')
     parser.add_argument('-p', '--path', type=str, default=".", help='Path for folder structure to generate.')
+    parser.add_argument('args', nargs=argparse.REMAINDER)
     args = parser.parse_args()
     
     autogen(args.file, args.anchor, args.path, args.extension)

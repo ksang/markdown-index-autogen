@@ -12,13 +12,6 @@ python autogen.py -e .txt
 
 ## Generated index
 [comment]: # (markdown-index-autogen)
-- [example_folder_a](./example_folder_a)
-	- [example_a_1.txt](./example_folder_a/example_a_1.txt)
-- [example_folder_b](./example_folder_a/example_folder_b)
-	- [example_b_1.txt](./example_folder_a/example_folder_b/example_b_1.txt)
-- [example_folder_c](./example_folder_c)
-	- [example_c_1.txt](./example_folder_c/example_c_1.txt)
-	- [example_c_2.txt](./example_folder_c/example_c_2.txt)
 
 Below content will remain unchanged.
 
