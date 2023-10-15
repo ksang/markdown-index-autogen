@@ -34,7 +34,7 @@ def get_index(path, extension):
 
 def autogen(filename, anchor, path, extension):
     data = []
-    with open(filename,"r") as f:
+    with open(filename,"r", encoding='utf-8') as f:
         data = f.readlines()
     start, end = get_section(data, anchor)
 
@@ -44,7 +44,7 @@ def autogen(filename, anchor, path, extension):
 
     new_data = data[:start] + new_index + data[end:]
 
-    with open(filename,"w") as f:
+    with open(filename,"w", encoding='utf-8') as f:
         f.writelines(new_data)
 
 def main():
